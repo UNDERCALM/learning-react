@@ -10,9 +10,9 @@ const ProductSelectionPage = () => {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
-    <div>
+    <div style={{ background: '#111', minHeight: '100vh', color: '#f3f4f6' }}>
       <Navbar onShowDetails={() => setShowModal(true)} />
-      <div style={{ display: 'flex', gap: 32, padding: 32, flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', gap: 32, padding: 32, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start' }}>
         <RoomSelector />
         <AddonSelector />
         <MealSelector />
